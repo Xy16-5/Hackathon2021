@@ -28,6 +28,38 @@ function createButtons()
 	);
 }
 
+
+
+function resizeimage1(){
+	$(window).resize(function(){
+		var cliWidth=document.body.clientWidth;
+		var cliHeight=document.body.clientHeight;
+		var divHeight= 0.9*0.85*cliHeight;
+		$('.image1').css("height",divHeight +"px")
+	});
+};
+
+function resizeimage2(){
+	$(window).resize(function(){
+		var cliWidth=document.body.clientWidth;
+		var cliHeight=document.body.clientHeight;
+		var divHeight= 0.45*0.85*cliHeight;
+		$('.image2').css("height",divHeight +"px");
+	});
+};
+
+function resizeimage3(){
+	$(window).resize(function(){
+		var cliWidth=document.body.clientWidth;
+		var cliHeight=document.body.clientHeight;
+		var divHeight= 0.45*0.85*cliHeight;
+		var divTop = 1.05*0.45*0.85*cliHeight
+		$('.image3').css("height",divHeight +"px");
+		$('.image3').css("top",divTop +"px");
+	});
+};
+
+
 $(document).ready(
 	function()
 	{
@@ -36,9 +68,16 @@ $(document).ready(
 		
 		// Resize slides initially, then hook into resize event.
 		resizeSlides();
+		resizeimage1();
+		resizeimage2();
+		resizeimage3();
+
 		$(window).resize(function(evt)
 		{
 			resizeSlides();
+			resizeimage1();
+			resizeimage2();
+			resizeimage3()
 		});
 	}
 );

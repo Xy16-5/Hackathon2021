@@ -76,17 +76,21 @@ body {
   }
 
   #image1{
+      top: 20px;
       position: absolute;
-      left:10px;
+      right:0px;
   }
   #image2{
+    top: 10px;
     position: absolute;
-    right: 0px;
+    left: 10px;
+    
 }
 
 #image3{
     position: absolute;
-    right: 0px;
+    top: 50%;
+    left: 10px;
 }
 
 
@@ -118,4 +122,23 @@ body {
     text-align:center;
     padding:5px;
     height: 5%;	 	 
+}
+
+
+#annotation{
+    font-size: 10px;
+
+
+}
+
+.annotation1{
+    position: absolute;
+    top: 46%;
+    left: 100px;
+}
+
+.annotation2{
+    position: absolute;
+    top: 95%;
+    left: 150px;
 }
