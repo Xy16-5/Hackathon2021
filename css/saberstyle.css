@@ -140,5 +140,11 @@ body {
 .annotation2{
     position: absolute;
     top: 95%;
-    left: 150px;
+    left: 170px;
+}
+
+.annotation3{
+    position: absolute;
+    top: 95%;
+    left: 870px;
 }
