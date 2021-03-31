@@ -1,43 +1,35 @@
 <html>
   <head>
-    <title>SaberSlides HTML5/JS Demo</title>
-    <link rel="stylesheet" type="text/css" href="saber/saberstyle.css" />
+     <!-- Javascript Imports -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script type="text/javascript" src="saber/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="saber/jquery.scrollTo-min.js"></script>
-    <script type="text/javascript" src="saber/sabersettings.js"></script>
-    <script type="text/javascript" src="saber/saberinit.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="js/sabersettings.js"></script>
+    <script type="text/javascript" src="js/saberinit.js"></script>
+    <!-- CSS Imports -->
+    <link rel="stylesheet" type="text/css" href="css/saberstyle.css" />
+
   </head>
   <body>
-    <!-- Create divs for each slide, and be sure to give it both a class of 
-    "slide" and "slide#" where # is the number of the slide.  Also don't forget to 
-    add divs of class "buttonTo#" to progress to the #th slide!
-    (Note: these classes are configurable in sabersettings.js)
-    -->
-    <div class="saber-slide saber-slide1">
-      This is slide 1!
-      <br />
-      <div class="saber-button saber-buttonTo2">Next slide</div>
-    </div>
-    <div class="saber-slide saber-slide2">
-      This is slide 2!
-      <br />
-      <div class="saber-button saber-buttonTo3">Next slide</div>
-    </div>
-    <div class="saber-slide saber-slide3">
-      This is slide 3!
-      <br />
-      <div class="saber-button saber-buttonTo4">Next slide</div>
-    </div>
-    <div class="saber-slide saber-slide4">
-      This is slide 4!
-      <br />
-      <div class="saber-button saber-buttonTo5">Next slide</div>
-    </div>
-    <div class="saber-slide saber-slide5">
-      This is slide 5 (the last one)!
-      <br />
-      <div class="saber-button saber-buttonTo1">Back to the top</div>
-    </div>
+    <!-- Page 1 -->
+      <div class="saber-slide saber-slide1">
+        <div id="sidebar1">
+          <div class="Heading1">How COVID-19 Makes Donald Trump Lose His Job?</div>
+          <br />
+          <div class="Content1">Content</div>
+          <p id="contents">pending</p>
+          <br />
+          <div class="saber-button saber-buttonTo2">Next slide</div>
+        </div>
+        <div id= "main1">
+          <iframe seamless src="Flipping people.html" width="100%" height="100%"></iframe>
+        </div>
+      </div>
+      <div class="saber-slide saber-slide2">
+        This is slide 2!
+        <br />
+        <div class="saber-button saber-buttonTo1">Back to the top</div>
+      </div>
+    
   </body>
 </html>
