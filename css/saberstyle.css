@@ -154,6 +154,16 @@ body {
     font-weight:bold;
 }
 
+.subheading2{
+    color: #0015BC
+ 
+}
+
+.subheading3{
+    color: #FF0000
+ 
+}
+
 #content{
     font-size: 16px;
 }
