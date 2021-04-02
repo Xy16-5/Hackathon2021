@@ -148,3 +148,12 @@ body {
     top: 95%;
     left: 57%;
 }
+
+#subheading{
+    font-size: 14px;
+    font-weight:bold;
+}
+
+#content{
+    font-size: 12px;
+}
