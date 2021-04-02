@@ -164,6 +164,9 @@ body {
  
 }
 
+#figuretitle{
+    font-size: 16px;
+}
 #content{
     font-size: 16px;
 }
