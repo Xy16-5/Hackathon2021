@@ -29,6 +29,14 @@ function createButtons()
 }
 
 
+function resizeimagepage1(){
+	$(window).resize(function(){
+		var cliWidth=document.body.clientWidth;
+		var cliHeight=document.body.clientHeight;
+		var divHeight= 0.45*0.85*cliHeight;
+		$('.image-page1').css("height",divHeight +"px")
+	});
+};
 
 function resizeimage1(){
 	$(window).resize(function(){
@@ -68,6 +76,7 @@ $(document).ready(
 		
 		// Resize slides initially, then hook into resize event.
 		resizeSlides();
+		resizeimagepage1();
 		resizeimage1();
 		resizeimage2();
 		resizeimage3();
@@ -75,6 +84,7 @@ $(document).ready(
 		$(window).resize(function(evt)
 		{
 			resizeSlides();
+			resizeimagepage1();
 			resizeimage1();
 			resizeimage2();
 			resizeimage3()
